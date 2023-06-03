@@ -28,6 +28,14 @@ public class HomePage {
         clickOnElement("Key Presses");
         return new AdditionalKeys(driver);
     }
+    public HorizontalSlider clickHorizontalSlider(){
+        clickOnElement("Horizontal Slider");
+        return new HorizontalSlider(driver);
+    }
+    public AlertsPage clickAlerts(){
+        clickOnElement("JavaScript Alerts");
+        return new AlertsPage(driver);
+    }
     private void clickOnElement(String link){
         driver.findElement(By.linkText(link)).click();
     }
