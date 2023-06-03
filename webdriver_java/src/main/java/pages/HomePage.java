@@ -24,6 +24,10 @@ public class HomePage {
         clickOnElement("Hovers");
         return new HoverPage(driver);
     }
+    public AdditionalKeys clickAdditionalKeys(){
+        clickOnElement("Key Presses");
+        return new AdditionalKeys(driver);
+    }
     private void clickOnElement(String link){
         driver.findElement(By.linkText(link)).click();
     }
