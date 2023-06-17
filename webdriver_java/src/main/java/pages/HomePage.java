@@ -36,6 +36,10 @@ public class HomePage {
         clickOnElement("JavaScript Alerts");
         return new AlertsPage(driver);
     }
+    public FileUpload clickFileUpload(){
+        clickOnElement("File Upload");
+        return new FileUpload(driver);
+    }
     private void clickOnElement(String link){
         driver.findElement(By.linkText(link)).click();
     }
